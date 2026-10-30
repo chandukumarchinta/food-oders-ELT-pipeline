@@ -1,0 +1,57 @@
+======================================================================
+FOOD ORDERS DATA PIPELINE - DATA QUALITY & VALIDATION REPORT
+======================================================================
+Generated At: 2026-10-30 14:04:09
+Total Raw Records Ingested:    1010
+Total Transformed Records:     1000
+Total Rejected Records:        10
+----------------------------------------------------------------------
+
+[CHECK 1] DUPLICATE RECORDS VERIFICATION: [PASS]
+  - Duplicate Order IDs:       0
+  - Full Duplicate Rows:       0
+  - Cross-Batch Duplicates Filtered: 10
+
+[CHECK 2] MANDATORY NON-NULL INTEGRITY: [PASS]
+  - All required fields (IDs, Timestamps, Channels) have 0 missing values.
+
+[CHECK 3] COLUMN DATA TYPES VERIFICATION: [PASS]
+  - All columns match required analytical database types.
+
+[CHECK 4] DELIVERY DURATION VALIDATION: [PASS]
+  - Formula Accuracy:          100% Correct
+  - Negative Durations (< 0):  0
+  - Min Delivery Duration:     30.00 minutes
+  - Max Delivery Duration:     119.00 minutes
+  - Mean Delivery Duration:    73.58 minutes
+  - Median Delivery Duration:  74.00 minutes
+
+[CHECK 5] PLATFORM NET REVENUE VALIDATION: [PASS]
+  - Formula Accuracy:          100% Correct
+  - Incomplete Records as NULL: 100% Correct
+  - Records with Valid Revenue:828
+  - Records with NULL Revenue: 172
+  - Total Platform Net Revenue: $80,877.00
+
+[FINANCIAL DATA COMPLETENESS SUMMARY]
+  - order_value             :  40 missing (4.0%)
+  - delivery_fee            :  50 missing (5.0%)
+  - commission_fee          :  40 missing (4.0%)
+  - payment_processing_fee  :  50 missing (5.0%)
+  - refunds_chargebacks     :  40 missing (4.0%)
+
+[REJECTED RECORDS AUDIT]
+  - Duplicate Order ID: 831 already processed: 1 records
+  - Duplicate Order ID: 571 already processed: 1 records
+  - Duplicate Order ID: 419 already processed: 1 records
+  - Duplicate Order ID: 122 already processed: 1 records
+  - Duplicate Order ID: 156 already processed: 1 records
+  - Duplicate Order ID: 208 already processed: 1 records
+  - Duplicate Order ID: 580 already processed: 1 records
+  - Duplicate Order ID: 497 already processed: 1 records
+  - Duplicate Order ID: 197 already processed: 1 records
+  - Duplicate Order ID: 133 already processed: 1 records
+
+======================================================================
+FINAL DATA QUALITY VERDICT: ALL CHECKS PASSED [PASSED]
+======================================================================

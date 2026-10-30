@@ -1,0 +1,37 @@
+======================================================================
+FOOD ORDERS ANALYTICS - BUSINESS QUESTIONS SQL ANALYSIS
+======================================================================
+
+1. What is the total order value?
+   -> Total Order Value: $1,013,415.00
+      (Based on 960 valid orders; 40 records with missing order values excluded)
+
+2. What is the average order value?
+   -> Average Order Value: $1,055.64
+
+3. Which payment method has the highest number of orders?
+   -> Top Payment Method: Cash on Delivery (336 orders)
+      Payment Methods Breakdown:
+        - Cash on Delivery  : 336 orders (33.6%)
+        - Credit Card       : 320 orders (32.0%)
+        - Digital Wallet    : 294 orders (29.4%)
+        - Unknown           :  50 orders (5.0%)
+
+4. Which order channel has the highest number of orders?
+   -> Top Order Channel: Mobile App (686 orders)
+      Order Channels Breakdown:
+        - Mobile App        : 686 orders (68.6%)
+        - Partner App       : 162 orders (16.2%)
+        - Website           : 152 orders (15.2%)
+
+5. What is the average delivery time in minutes?
+   -> Average Delivery Time: 73.58 minutes (Range: 30.00 - 119.00 mins)
+
+6. What is the total platform net revenue according to the specified formula?
+   Formula: Commission Fee + Delivery Fee - Payment Processing Fee - Refunds/Chargebacks
+   -> Total Platform Net Revenue: $80,877.00
+      (Calculated across 828 orders with complete financial components; 172 orders excluded due to missing components)
+
+======================================================================
+END OF BUSINESS ANALYSIS REPORT
+======================================================================

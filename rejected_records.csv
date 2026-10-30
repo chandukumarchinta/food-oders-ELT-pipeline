@@ -1,0 +1,11 @@
+Batch_Number,Order_ID,Customer_ID,Rejection_Reason
+11,831,C4530,Duplicate Order ID: 831 already processed
+11,571,C7819,Duplicate Order ID: 571 already processed
+11,419,C2066,Duplicate Order ID: 419 already processed
+11,122,C7019,Duplicate Order ID: 122 already processed
+11,156,C2853,Duplicate Order ID: 156 already processed
+11,208,C5736,Duplicate Order ID: 208 already processed
+11,580,C8102,Duplicate Order ID: 580 already processed
+11,497,C9010,Duplicate Order ID: 497 already processed
+11,197,C2986,Duplicate Order ID: 197 already processed
+11,133,C6915,Duplicate Order ID: 133 already processed

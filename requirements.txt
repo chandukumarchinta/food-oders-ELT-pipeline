@@ -1,0 +1,10 @@
+# Core Data Manipulation and Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# MySQL Database Driver
+mysql-connector-python>=8.0.0
+
+# Environment Configuration
+python-dotenv>=1.0.0
+
